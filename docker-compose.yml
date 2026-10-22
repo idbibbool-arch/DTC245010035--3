@@ -108,15 +108,15 @@ services:
     image: prom/mysqld-exporter:v0.15.1
     container_name: mysql_exporter
     restart: unless-stopped
-    user: "65534:65534"
     command:
-      - --config.my-cnf=/cfg/exporter.cnf
+      - "--config.my-cnf=/etc/.my.cnf"
     volumes:
-      - ./mysql/exporter.cnf:/cfg/exporter.cnf:ro
+      - ./prometheus/.my.cnf:/etc/.my.cnf:ro
     depends_on:
       - mysql_db
     networks:
       - monitoring_net
+      - backend_net
 
   prometheus:
     image: prom/prometheus:v2.51.0
