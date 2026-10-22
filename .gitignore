@@ -1,3 +1,4 @@
 .env
 nginx/certs/*.key
 mysql/exporter.cnf
+.my.cnf
