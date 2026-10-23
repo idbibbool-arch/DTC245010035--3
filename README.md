@@ -7,7 +7,6 @@
 
 ## 1. Hướng dẫn khởi chạy hệ thống
 
-### Bước 1: Sao chép mã nguồn và cấu hình môi trường
 ```bash
 git clone [https://github.com/DTC245010035/DTC245010035--3.git](https://github.com/DTC245010035/DTC245010035--3.git)
 cd DTC245010035--3
